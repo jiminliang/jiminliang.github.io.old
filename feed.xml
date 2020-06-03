@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Advanced Medical Imaging Lab</title>
-    <description>School of Life Science and Technology, Xidian University</description>
-    <link>https://jiminliang.github.io/homepage/</link>
-    <atom:link href="https://jiminliang.github.io/homepage/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 03 Jun 2020 09:14:42 +0800</pubDate>
-    <lastBuildDate>Wed, 03 Jun 2020 09:14:42 +0800</lastBuildDate>
+    <title>AI Imaging Lab</title>
+    <description>School of Electronic Engineering, Xidian University</description>
+    <link>https://jiminliang.github.io/</link>
+    <atom:link href="https://jiminliang.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Wed, 03 Jun 2020 09:29:20 +0800</pubDate>
+    <lastBuildDate>Wed, 03 Jun 2020 09:29:20 +0800</lastBuildDate>
     <generator>Jekyll v3.8.4</generator>
     
       <item>
@@ -71,8 +71,8 @@ Build
 
 </description>
         <pubDate>Tue, 04 Sep 2018 00:00:00 +0800</pubDate>
-        <link>https://jiminliang.github.io/homepage/skills/2018/09/04/Maintaining-website/</link>
-        <guid isPermaLink="true">https://jiminliang.github.io/homepage/skills/2018/09/04/Maintaining-website/</guid>
+        <link>https://jiminliang.github.io/skills/2018/09/04/Maintaining-website/</link>
+        <guid isPermaLink="true">https://jiminliang.github.io/skills/2018/09/04/Maintaining-website/</guid>
         
         <category>How_to</category>
         
@@ -86,8 +86,8 @@ Build
         <description>
 </description>
         <pubDate>Mon, 02 May 2016 00:00:00 +0800</pubDate>
-        <link>https://jiminliang.github.io/homepage/2016/05/02/New-Surface-Visualization/</link>
-        <guid isPermaLink="true">https://jiminliang.github.io/homepage/2016/05/02/New-Surface-Visualization/</guid>
+        <link>https://jiminliang.github.io/2016/05/02/New-Surface-Visualization/</link>
+        <guid isPermaLink="true">https://jiminliang.github.io/2016/05/02/New-Surface-Visualization/</guid>
         
         <category>plysurface</category>
         
@@ -103,8 +103,8 @@ Build
         <description>
 </description>
         <pubDate>Mon, 02 May 2016 00:00:00 +0800</pubDate>
-        <link>https://jiminliang.github.io/homepage/2016/05/02/New-Projector/</link>
-        <guid isPermaLink="true">https://jiminliang.github.io/homepage/2016/05/02/New-Projector/</guid>
+        <link>https://jiminliang.github.io/2016/05/02/New-Projector/</link>
+        <guid isPermaLink="true">https://jiminliang.github.io/2016/05/02/New-Projector/</guid>
         
         <category>projector</category>
         
@@ -321,8 +321,8 @@ HighRGB = np.array([26, 152, 80]) / 255.
 
 </description>
         <pubDate>Mon, 02 May 2016 00:00:00 +0800</pubDate>
-        <link>https://jiminliang.github.io/homepage/2016/05/02/New-Presentation/</link>
-        <guid isPermaLink="true">https://jiminliang.github.io/homepage/2016/05/02/New-Presentation/</guid>
+        <link>https://jiminliang.github.io/2016/05/02/New-Presentation/</link>
+        <guid isPermaLink="true">https://jiminliang.github.io/2016/05/02/New-Presentation/</guid>
         
         <category>presentation</category>
         
@@ -495,8 +495,8 @@ reg =
 Published with MATLAB® R2014b
 </description>
         <pubDate>Mon, 02 May 2016 00:00:00 +0800</pubDate>
-        <link>https://jiminliang.github.io/homepage/project1/2016/05/02/New-Matlab-Script/</link>
-        <guid isPermaLink="true">https://jiminliang.github.io/homepage/project1/2016/05/02/New-Matlab-Script/</guid>
+        <link>https://jiminliang.github.io/project1/2016/05/02/New-Matlab-Script/</link>
+        <guid isPermaLink="true">https://jiminliang.github.io/project1/2016/05/02/New-Matlab-Script/</guid>
         
         <category>matlab</category>
         
@@ -514,8 +514,8 @@ Published with MATLAB® R2014b
         <description>
 </description>
         <pubDate>Sun, 01 May 2016 00:00:00 +0800</pubDate>
-        <link>https://jiminliang.github.io/homepage/project1/2016/05/01/New-Notebook/</link>
-        <guid isPermaLink="true">https://jiminliang.github.io/homepage/project1/2016/05/01/New-Notebook/</guid>
+        <link>https://jiminliang.github.io/project1/2016/05/01/New-Notebook/</link>
+        <guid isPermaLink="true">https://jiminliang.github.io/project1/2016/05/01/New-Notebook/</guid>
         
         <category>jupyter</category>
         
@@ -709,8 +709,8 @@ STL
 
 </description>
         <pubDate>Tue, 19 Apr 2016 00:00:00 +0800</pubDate>
-        <link>https://jiminliang.github.io/homepage/project1/2016/04/19/New-Post/</link>
-        <guid isPermaLink="true">https://jiminliang.github.io/homepage/project1/2016/04/19/New-Post/</guid>
+        <link>https://jiminliang.github.io/project1/2016/04/19/New-Post/</link>
+        <guid isPermaLink="true">https://jiminliang.github.io/project1/2016/04/19/New-Post/</guid>
         
         <category>post</category>
         
