@@ -40,7 +40,7 @@ Build
 ```
 jekyll serve
 ```
-Then visit http:localhost:4000 to preview the webpages. 
+Then visit http://localhost:4000 to preview the webpages. 
 
 2. Build to other directory ：
 ```
