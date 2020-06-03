@@ -2,7 +2,6 @@
 
 This website is build with [Jelyll](https://jekyllrb.com/docs/) and the template of [Project Pages](http://projectpages.github.io/project-pages/).
 
-
 -------------
 
 Fundamentals
