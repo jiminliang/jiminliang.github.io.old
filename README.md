@@ -44,7 +44,7 @@ Then visit http://localhost:4000 to preview the webpages.
 
 2. Build to other directory ：
 ```
-jekyll build --destination ..\homepage
+jekyll build --destination ..\jiminliang.github.io
 ```
 
 3. Done. Publish it with Git. 
