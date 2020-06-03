@@ -9,7 +9,7 @@ Fundamentals
 -------------
 Github provides a simple way to build and host a static website or blogs. It surports [Jelyll](https://jekyllrb.com/docs/), a simple, extendable, static site generator, and [markdown](http://www.markdown.cn/) language to wirte the website pages. 
 
-1. Basic knowledge about [Github Pages](https://pages.github.com/). I used *homepage* in stead of *username*.github.io as the repository name of my website. In this case my website can be accessed at https://jiminliang.github.io/homepage/.
+1. Basic knowledge about [Github Pages](https://pages.github.com/). 
 
 2. Knowledge about [Jekyll](https://jekyllrb.com/docs/). 
 
@@ -40,7 +40,7 @@ Build
 ```
 jekyll serve
 ```
-Then visit http://localhost:4000 to preview the webpages. 
+  Then visit http://localhost:4000 to preview the webpages. 
 
 2. Build to other directory ：
 ```
@@ -51,5 +51,5 @@ jekyll build --destination ..\jiminliang.github.io
 
 
 
-# Reference:
+# Reference
 1. [Maintaining the Kwiat group website with Jekyll](https://github.com/kdsec/kdsec.github.io). 
