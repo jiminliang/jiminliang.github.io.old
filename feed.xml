@@ -5,9 +5,82 @@
     <description>School of Electronic Engineering, Xidian University</description>
     <link>https://jiminliang.github.io/</link>
     <atom:link href="https://jiminliang.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 03 Jun 2020 20:00:49 +0800</pubDate>
-    <lastBuildDate>Wed, 03 Jun 2020 20:00:49 +0800</lastBuildDate>
+    <pubDate>Fri, 05 Jun 2020 10:06:05 +0800</pubDate>
+    <lastBuildDate>Fri, 05 Jun 2020 10:06:05 +0800</lastBuildDate>
     <generator>Jekyll v3.8.4</generator>
+    
+      <item>
+        <title>New website on Github</title>
+        <description>
+
+The website of our research group was moved to Github. Everything is under construction. We are still learning how to improve the webpages. Thanks for your attention.
+
+
+
+This website is build with Jelyll and the template of Project Pages.
+
+
+
+Fundamentals
+Github provides a simple way to build and host a static website or blogs. It surports Jelyll, a simple, extendable, static site generator, and markdown language to wirte the website pages.
+
+
+  
+    Basic knowledge about Github Pages.
+  
+  
+    Knowledge about Jekyll.
+  
+  Our website is based on the Project Pages template. I moved the blog page to an individual webpage, by adding the following line in _config.yml:
+    paginate_path: &quot;/blog/page:10/&quot;
+    
+  
+  For publication list, I used the bibjekyll plugin. On Windows, beside bibtex2html, you also need to install the bibtex.exe. I installed the CTEX packges to have it.
+
+
+A more detailed description on how to maintain a website with Jekyll can be found here.
+
+Installation
+
+  
+    Install Jekyll following comments here.
+  
+  Install jekyll-paginate plugin :
+    gem install jekyll-paginate
+    
+  
+  Install bibjekyll plugin following comments here and add the path of Bibtex2html to system path variable.
+
+
+Build
+
+  Preview locally ：
+    jekyll serve
+    
+    Then visit http://localhost:4000 to preview the webpages.
+  
+  Build to other directory ：
+    jekyll build --destination ..\jiminliang.github.io
+    
+  
+  Done. Publish it with Git.
+
+
+Reference
+
+  Maintaining the Kwiat group website with Jekyll.
+
+</description>
+        <pubDate>Thu, 04 Jun 2020 00:00:00 +0800</pubDate>
+        <link>https://jiminliang.github.io/news/2020/06/04/Website-Created/</link>
+        <guid isPermaLink="true">https://jiminliang.github.io/news/2020/06/04/Website-Created/</guid>
+        
+        <category>News</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Maintaining the website</title>
@@ -16,6 +89,8 @@
 My first blog!
 
 I built this website using Jekyll on Windows 10. It cost me one week to build the framework and another week to fill the contents. I wrote the following tips in case I need to repeat the job sometimes in the future.
+
+
 
 
 
@@ -78,6 +153,430 @@ Build
         
         
         <category>Skills</category>
+        
+      </item>
+    
+      <item>
+        <title>New Surface Visualization</title>
+        <description>
+</description>
+        <pubDate>Mon, 02 May 2016 00:00:00 +0800</pubDate>
+        <link>https://jiminliang.github.io/2016/05/02/New-Surface-Visualization/</link>
+        <guid isPermaLink="true">https://jiminliang.github.io/2016/05/02/New-Surface-Visualization/</guid>
+        
+        <category>plysurface</category>
+        
+        <category>visualization</category>
+        
+        <category>template</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>New Projector</title>
+        <description>
+</description>
+        <pubDate>Mon, 02 May 2016 00:00:00 +0800</pubDate>
+        <link>https://jiminliang.github.io/2016/05/02/New-Projector/</link>
+        <guid isPermaLink="true">https://jiminliang.github.io/2016/05/02/New-Projector/</guid>
+        
+        <category>projector</category>
+        
+        <category>visualization</category>
+        
+        <category>template</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>New Matlab Script</title>
+        <description>
+
+
+
+
+
+
+
+
+
+
+
+ Workflow Overview 
+
+
+
+
+
+
+graph TB
+
+
+
+
+
+
+
+
+
+node1(Load Variables From Workspace)
+
+
+
+click node1 &quot;#1&quot;
+
+
+
+
+
+
+
+
+
+
+
+
+
+node1(Load Variables From Workspace) --&amp;gt; node2(Obtain 2-Point Statistics)
+
+
+
+click node2 &quot;#2&quot;
+
+
+
+
+
+
+
+
+
+
+
+
+
+node2(Obtain 2-Point Statistics) --&amp;gt; node3(PCA)
+
+
+
+click node3 &quot;#3&quot;
+
+
+
+
+
+
+
+
+
+
+
+
+
+node3(PCA) --&amp;gt; node4(Function Estimation)
+
+
+
+click node4 &quot;#4&quot;
+
+
+
+
+
+Obtain the direct to Project-Pages publish function here.
+
+Load Variables From Workspace
+Loading the microstructures and the effective property.
+
+load GDL200Volumes.mat
+load MPL290Volumes.mat
+load EffectiveProperty290MPL200GDLinThatOrder.mat
+
+Obtain 2-Point Statistics
+
+GG = zeros(490,49^3);
+
+for i=1:290
+    current = MPL{i};
+    GGcurrent = TwoPointMaster('full','auto',25,current);
+    GG(i,:) = GGcurrent(:)/numel(current);
+    PP(i)=GGcurrent(25,25,25)/numel(current);
+end
+
+for i=1:200
+    current = GDL{i};
+    GGcurrent = TwoPointMaster('full','auto',25,current);
+    GG(i+290,:) = GGcurrent(:)/numel(current);
+    PP(i+290)=GGcurrent(25,25,25)/numel(current);
+end
+
+PCA
+Via SVD: 
+
+
+
+
+
+
+[PC1,Var1,Basis1]=PCAConstruct(GG,10);
+scatter(PC1(:,1),PC1(:,2),30,[ones(290,1);2*ones(200,1)],'filled'); colormap jet;
+
+
+Function Estimation
+Using Multivariate Polynomial Regression
+
+reg = MultiPolyRegress(PC1(:,1:2),R,3,'figure')
+
+reg = 
+
+           FitParameters: '-----------------'
+             PowerMatrix: [10x2 double]
+                  Scores: [490x10 double]
+    PolynomialExpression: [10x2 table]
+            Coefficients: [10x1 double]
+                    yhat: [490x1 double]
+               Residuals: [490x1 double]
+           GoodnessOfFit: '-----------------'
+                 RSquare: 0.9572
+                     MAE: 0.0571
+                  MAESTD: 0.0561
+           Normalization: '1-to-1 (Default)'
+      LOOCVGoodnessOfFit: '-----------------'
+               CVRSquare: 0.9556
+                   CVMAE: 0.0583
+                CVMAESTD: 0.0570
+         CVNormalization: '1-to-1 (Default)'
+
+
+
+Published with MATLAB® R2014b
+</description>
+        <pubDate>Mon, 02 May 2016 00:00:00 +0800</pubDate>
+        <link>https://jiminliang.github.io/project1/2016/05/02/New-Matlab-Script/</link>
+        <guid isPermaLink="true">https://jiminliang.github.io/project1/2016/05/02/New-Matlab-Script/</guid>
+        
+        <category>matlab</category>
+        
+        <category>workflows</category>
+        
+        <category>template</category>
+        
+        
+        <category>project1</category>
+        
+      </item>
+    
+      <item>
+        <title>New Notebook</title>
+        <description>
+</description>
+        <pubDate>Sun, 01 May 2016 00:00:00 +0800</pubDate>
+        <link>https://jiminliang.github.io/project1/2016/05/01/New-Notebook/</link>
+        <guid isPermaLink="true">https://jiminliang.github.io/project1/2016/05/01/New-Notebook/</guid>
+        
+        <category>jupyter</category>
+        
+        <category>workflows</category>
+        
+        <category>template</category>
+        
+        
+        <category>project1</category>
+        
+      </item>
+    
+      <item>
+        <title>New Post</title>
+        <description>
+
+Table of Contents
+
+
+  Table of Contents
+  Basic Functionality    
+      Headers
+    
+  
+  Header 1    
+      Header 2        
+          Header 3
+        
+      
+      Styling
+      Lists
+      Links
+      Images
+      Code
+      MathJax
+      Tables
+      Quotes
+      Rule
+      HTML
+    
+  
+  Advanced Functionality    
+      Color and Alignment
+    
+  
+  Some Advanced Features    
+      Data Projector
+      STL
+    
+  
+
+
+Basic Functionality
+
+Headers
+
+Header 1
+
+Header 2
+
+Header 3
+
+Styling
+
+Bold
+
+Italics
+
+Bold and Italics
+
+Lists
+
+
+  
+    Item 1
+  
+  
+    Item 2
+  
+
+
+
+  
+    Unordered Item
+
+    
+      
+        Sub Item 1
+
+        
+          Bold Sub Sub Ordered Item
+        
+      
+    
+  
+
+
+Links
+
+In-Line
+
+I’m a reference-style link 1
+
+I’m a reference-style link 1
+
+Images
+
+Hold your pointer clicked over the image to expand the view.
+
+
+
+Code
+
+Inline code.
+
+import numpy as np
+def hello_world():
+    print('Hello World!'')
+
+MathJax
+
+Use MathJax for Math.
+
+
+Tables
+
+
+  
+    
+      Here
+      is
+      a
+      row!
+    
+  
+  
+    
+      is
+      Left
+      Center
+      Right
+    
+    
+      a
+      cut
+      it
+      A
+    
+    
+      column
+      short
+      B
+      C
+    
+  
+
+
+Quotes
+
+
+  War does not decide who is right, only who is left.
+
+
+Rule
+
+
+
+HTML
+
+Can write the whole post or sections in HTML for very specific needs. [For the advanced user or the code savvy.]
+
+Advanced Functionality
+
+Head over to the documentation page for tutorials on some basic html formatting and some extensions you can use for cool stuff like interactive 3D visualizations.
+
+Color and Alignment
+
+This text is centered.
+
+This is a red text with blue and green inline text.
+
+Some Advanced Features
+
+Data Projector
+
+
+
+STL
+
+
+
+</description>
+        <pubDate>Tue, 19 Apr 2016 00:00:00 +0800</pubDate>
+        <link>https://jiminliang.github.io/project1/2016/04/19/New-Post/</link>
+        <guid isPermaLink="true">https://jiminliang.github.io/project1/2016/04/19/New-Post/</guid>
+        
+        <category>post</category>
+        
+        <category>template</category>
+        
+        
+        <category>project1</category>
         
       </item>
     

@@ -1,6 +1,16 @@
 {
   
 
+    "news-2020-06-04-website-created": {
+      "title": "New website on Github",
+      "content"	 : "The website of our research group was moved to Github. Everything is under construction. We are still learning how to improve the webpages. Thanks for your attention.This website is build with Jelyll and the template of Project Pages.FundamentalsGithub provides a simple way to build and host a static website or blogs. It surports Jelyll, a simple, extendable, static site generator, and markdown language to wirte the website pages.      Basic knowledge about Github Pages.        Knowledge about Jekyll.    Our website is based on the Project Pages template. I moved the blog page to an individual webpage, by adding the following line in _config.yml:    paginate_path: &quot;/blog/page:10/&quot;        For publication list, I used the bibjekyll plugin. On Windows, beside bibtex2html, you also need to install the bibtex.exe. I installed the CTEX packges to have it.A more detailed description on how to maintain a website with Jekyll can be found here.Installation      Install Jekyll following comments here.    Install jekyll-paginate plugin :    gem install jekyll-paginate        Install bibjekyll plugin following comments here and add the path of Bibtex2html to system path variable.Build  Preview locally ：    jekyll serve        Then visit http://localhost:4000 to preview the webpages.    Build to other directory ：    jekyll build --destination ..jiminliang.github.io        Done. Publish it with Git.Reference  Maintaining the Kwiat group website with Jekyll.",
+      "url": "/news/2020/06/04/Website-Created/",
+      "author": "Jimin Liang",
+      "categories": "news"
+    }
+    ,
+  
+
     "skills-2018-09-04-maintaining-website": {
       "title": "Maintaining the website",
       "content"	 : "My first blog!I built this website using Jekyll on Windows 10. It cost me one week to build the framework and another week to fill the contents. I wrote the following tips in case I need to repeat the job sometimes in the future.  Fundamentals  Installation  BuildFundamentalsGithub provides a simple way to build and host a static website or blogs. It surports Jelyll, a simple, extendable, static site generator, and markdown language to wirte the website pages.      Basic knowledge about Github Pages. I used homepage in stead of username.github.io as the repository name of my website. In this case my website can be accessed at https://jiminliang.github.io/homepage/.        Knowledge about Jekyll.    Our website is based on the Project Pages template. I moved the blog page to an individual webpage, by adding the following line in _config.yml:    paginate_path: &quot;/blog/page:10/&quot;        For publication list, I used the bibjekyll plugin. On Windows, beside bibtex2html, you also need to install the bibtex.exe. I installed the CTEX packges to have it.A more detailed description on how to maintain a website with Jekyll can be found here.Installation      Install Jekyll following comments here.    Install jekyll-paginate plugin :    gem install jekyll-paginate        Install bibjekyll plugin following comments here and add the path of Bibtex2html to system path variable.Build  Preview locally ：    jekyll serve        Build to other directory ：    jekyll build --destination ..homepage        Done. Publish it with Git.",
@@ -8,9 +18,61 @@
       "author": "Jimin Liang",
       "categories": "Skills"
     }
+    ,
+  
+
+    "2016-05-02-new-surface-visualization": {
+      "title": "New Surface Visualization",
+      "content"	 : "",
+      "url": "/2016/05/02/New-Surface-Visualization/",
+      "author": "Ahmet Cecen",
+      "categories": ""
+    }
+    ,
+  
+
+    "2016-05-02-new-projector": {
+      "title": "New Projector",
+      "content"	 : "",
+      "url": "/2016/05/02/New-Projector/",
+      "author": "Ahmet Cecen",
+      "categories": ""
+    }
+    ,
+  
+
+    "project1-2016-05-02-new-matlab-script": {
+      "title": "New Matlab Script",
+      "content"	 : " Workflow Overview graph TBnode1(Load Variables From Workspace)click node1 &quot;#1&quot;node1(Load Variables From Workspace) --&amp;gt; node2(Obtain 2-Point Statistics)click node2 &quot;#2&quot;node2(Obtain 2-Point Statistics) --&amp;gt; node3(PCA)click node3 &quot;#3&quot;node3(PCA) --&amp;gt; node4(Function Estimation)click node4 &quot;#4&quot;Obtain the direct to Project-Pages publish function here.Load Variables From WorkspaceLoading the microstructures and the effective property.load GDL200Volumes.matload MPL290Volumes.matload EffectiveProperty290MPL200GDLinThatOrder.matObtain 2-Point StatisticsGG = zeros(490,49^3);for i=1:290    current = MPL{i};    GGcurrent = TwoPointMaster(&#39;full&#39;,&#39;auto&#39;,25,current);    GG(i,:) = GGcurrent(:)/numel(current);    PP(i)=GGcurrent(25,25,25)/numel(current);endfor i=1:200    current = GDL{i};    GGcurrent = TwoPointMaster(&#39;full&#39;,&#39;auto&#39;,25,current);    GG(i+290,:) = GGcurrent(:)/numel(current);    PP(i+290)=GGcurrent(25,25,25)/numel(current);endPCAVia SVD: [PC1,Var1,Basis1]=PCAConstruct(GG,10);scatter(PC1(:,1),PC1(:,2),30,[ones(290,1);2*ones(200,1)],&#39;filled&#39;); colormap jet;Function EstimationUsing Multivariate Polynomial Regressionreg = MultiPolyRegress(PC1(:,1:2),R,3,&#39;figure&#39;)reg =            FitParameters: &#39;-----------------&#39;             PowerMatrix: [10x2 double]                  Scores: [490x10 double]    PolynomialExpression: [10x2 table]            Coefficients: [10x1 double]                    yhat: [490x1 double]               Residuals: [490x1 double]           GoodnessOfFit: &#39;-----------------&#39;                 RSquare: 0.9572                     MAE: 0.0571                  MAESTD: 0.0561           Normalization: &#39;1-to-1 (Default)&#39;      LOOCVGoodnessOfFit: &#39;-----------------&#39;               CVRSquare: 0.9556                   CVMAE: 0.0583                CVMAESTD: 0.0570         CVNormalization: &#39;1-to-1 (Default)&#39;Published with MATLAB® R2014b",
+      "url": "/project1/2016/05/02/New-Matlab-Script/",
+      "author": "Ahmet Cecen",
+      "categories": "project1"
+    }
+    ,
+  
+
+    "project1-2016-05-01-new-notebook": {
+      "title": "New Notebook",
+      "content"	 : "",
+      "url": "/project1/2016/05/01/New-Notebook/",
+      "author": "Ahmet Cecen",
+      "categories": "project1"
+    }
+    ,
+  
+
+    "project1-2016-04-19-new-post": {
+      "title": "New Post",
+      "content"	 : "Table of Contents  Table of Contents  Basic Functionality          Headers        Header 1          Header 2                  Header 3                    Styling      Lists      Links      Images      Code      MathJax      Tables      Quotes      Rule      HTML        Advanced Functionality          Color and Alignment        Some Advanced Features          Data Projector      STL      Basic FunctionalityHeadersHeader 1Header 2Header 3StylingBoldItalicsBold and ItalicsLists      Item 1        Item 2        Unordered Item                  Sub Item 1                  Bold Sub Sub Ordered Item                    LinksIn-LineI’m a reference-style link 1I’m a reference-style link 1ImagesHold your pointer clicked over the image to expand the view.CodeInline code.import numpy as npdef hello_world():    print(&#39;Hello World!&#39;&#39;)MathJaxUse MathJax for Math.Tables            Here      is      a      row!                  is      Left      Center      Right              a      cut      it      A              column      short      B      C      Quotes  War does not decide who is right, only who is left.RuleHTMLCan write the whole post or sections in HTML for very specific needs. [For the advanced user or the code savvy.]Advanced FunctionalityHead over to the documentation page for tutorials on some basic html formatting and some extensions you can use for cool stuff like interactive 3D visualizations.Color and AlignmentThis text is centered.This is a red text with blue and green inline text.Some Advanced FeaturesData ProjectorSTL",
+      "url": "/project1/2016/04/19/New-Post/",
+      "author": "Ahmet Cecen",
+      "categories": "project1"
+    }
     
   
 
+  
+    
   
     
   
