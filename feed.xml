@@ -5,9 +5,34 @@
     <description>School of Electronic Engineering, Xidian University</description>
     <link>https://jiminliang.github.io/</link>
     <atom:link href="https://jiminliang.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 06 Jun 2020 11:36:12 +0800</pubDate>
-    <lastBuildDate>Sat, 06 Jun 2020 11:36:12 +0800</lastBuildDate>
+    <pubDate>Tue, 07 Jul 2020 12:46:12 +0800</pubDate>
+    <lastBuildDate>Tue, 07 Jul 2020 12:46:12 +0800</lastBuildDate>
     <generator>Jekyll v3.8.4</generator>
+    
+      <item>
+        <title>Paper accepted by ECCV 2020</title>
+        <description>
+
+Our paper on deep clustering was accepted by ECCV 2020. Congratulations to Chuang Niu.
+
+
+
+Chuang Niu, Jun Zhang, Ge Wang, Jimin Liang*, GATCluster: Self-Supervised Gaussian-Attention Network for Image Clustering, Poster presentation, ECCV 2020. Acceptance rate: 27% (1361/5025).
+
+arXiv preprint; Code; News
+
+Abstract: We propose a self-supervised Gaussian ATtention network for image Clustering (GATCluster). Rather than extracting intermediate features first and then performing the traditional clustering algorithm, GATCluster directly outputs semantic cluster labels without further post-processing. To train the GATCluster in a completely unsupervised manner, we design four self-learning tasks with the constraints of transformation invariance, separability maximization, entropy analysis, and attention mapping. Specifically, the transformation invariance and separability maximization tasks learn the relationships between sample pairs. The entropy analysis task aims to avoid trivial solutions. To capture the object-oriented semantics, we design a self-supervised attention mechanism that includes a parameterized attention module and a soft-attention loss. All the guiding signals for clustering are self-generated during the training process. Moreover, we develop a two-step learning algorithm that is memory-efficient for clustering large-size images. Extensive experiments demonstrate the superiority of our proposed method in comparison with the state-of-the-art image clustering benchmarks.
+</description>
+        <pubDate>Fri, 03 Jul 2020 00:00:00 +0800</pubDate>
+        <link>https://jiminliang.github.io/news/2020/07/03/Paper-Accepted-ECCV2020/</link>
+        <guid isPermaLink="true">https://jiminliang.github.io/news/2020/07/03/Paper-Accepted-ECCV2020/</guid>
+        
+        <category>News</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>New website on Github</title>

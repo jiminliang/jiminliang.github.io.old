@@ -1,6 +1,16 @@
 {
   
 
+    "news-2020-07-03-paper-accepted-eccv2020": {
+      "title": "Paper accepted by ECCV 2020",
+      "content"	 : "Our paper on deep clustering was accepted by ECCV 2020. Congratulations to Chuang Niu.Chuang Niu, Jun Zhang, Ge Wang, Jimin Liang*, GATCluster: Self-Supervised Gaussian-Attention Network for Image Clustering, Poster presentation, ECCV 2020. Acceptance rate: 27% (1361/5025).arXiv preprint; Code; NewsAbstract: We propose a self-supervised Gaussian ATtention network for image Clustering (GATCluster). Rather than extracting intermediate features first and then performing the traditional clustering algorithm, GATCluster directly outputs semantic cluster labels without further post-processing. To train the GATCluster in a completely unsupervised manner, we design four self-learning tasks with the constraints of transformation invariance, separability maximization, entropy analysis, and attention mapping. Specifically, the transformation invariance and separability maximization tasks learn the relationships between sample pairs. The entropy analysis task aims to avoid trivial solutions. To capture the object-oriented semantics, we design a self-supervised attention mechanism that includes a parameterized attention module and a soft-attention loss. All the guiding signals for clustering are self-generated during the training process. Moreover, we develop a two-step learning algorithm that is memory-efficient for clustering large-size images. Extensive experiments demonstrate the superiority of our proposed method in comparison with the state-of-the-art image clustering benchmarks.",
+      "url": "/news/2020/07/03/Paper-Accepted-ECCV2020/",
+      "author": "Jimin Liang",
+      "categories": "news"
+    }
+    ,
+  
+
     "news-2020-06-04-website-created": {
       "title": "New website on Github",
       "content"	 : "The website of our research group was moved to Github. Everything is under construction. We are still learning how to improve the webpages. Thanks for your attention.This website is build with Jelyll and the template of Project Pages.FundamentalsGithub provides a simple way to build and host a static website or blogs. It surports Jelyll, a simple, extendable, static site generator, and markdown language to wirte the website pages.      Basic knowledge about Github Pages.        Knowledge about Jekyll.    Our website is based on the Project Pages template. I moved the blog page to an individual webpage, by adding the following line in _config.yml:    paginate_path: &quot;/blog/page:10/&quot;        For publication list, I used the bibjekyll plugin. On Windows, beside bibtex2html, you also need to install the bibtex.exe. I installed the CTEX packges to have it.A more detailed description on how to maintain a website with Jekyll can be found here.Installation      Install Jekyll following comments here.    Install jekyll-paginate plugin :    gem install jekyll-paginate        Install bibjekyll plugin following comments here and add the path of Bibtex2html to system path variable.Build  Preview locally ：    jekyll serve        Then visit http://localhost:4000 to preview the webpages.    Build to other directory ：    jekyll build --destination ..jiminliang.github.io        Done. Publish it with Git.Reference  Maintaining the Kwiat group website with Jekyll.",

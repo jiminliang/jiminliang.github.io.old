@@ -33,6 +33,11 @@ callback([
   {
     "text": "New website on Github",
     "href": "https://jiminliang.github.io/news/2020/06/04/Website-Created/"
+  } ,
+
+  {
+    "text": "Paper accepted by ECCV 2020",
+    "href": "https://jiminliang.github.io/news/2020/07/03/Paper-Accepted-ECCV2020/"
   } 
 
 ])
